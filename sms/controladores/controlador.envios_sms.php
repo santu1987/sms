@@ -1,0 +1,75 @@
+<?php
+session_start();
+require("../modelos/modelo.envios_sms.php");
+require("../modelos/modelo.registrar_auditoria.php"); 
+require_once("../libs/fbasic.php");
+$mensaje=array();
+////////////////////////////////////////////
+//valido los campos
+if((isset($_POST["enviar_texto_sms"]))&&(isset($_POST["enviar_texto_modem"]))&&(isset($_POST["enviar_sms_grupo"])))
+{
+	if(($_POST["enviar_texto_sms"]!="")&&($_POST["enviar_texto_modem"]!="")&&($_POST["enviar_sms_grupo"]!=""))
+	{
+		$texto=$_POST["enviar_texto_sms"];
+		$modem=$_POST["enviar_texto_modem"];
+		$grupo=$_POST["enviar_sms_grupo"];
+		$opcion_grupo=$_POST["enviar_radio"];		
+	}
+	else
+	{
+		$mensaje="campos_blancos";
+		die(json_encode($mensaje));
+	}	
+}
+else
+{
+	$mensaje="campos_blancos";
+	die(json_encode($mensaje));
+}
+////////////////////////////////////////////
+$obj_sms=new Mensaje_sms();
+$modem_vector=array();
+$cantidad_modem=1;
+/////Aqui si se seleccionó, varios modem en el combo ...
+if($_POST["enviar_texto_modem"]=='-999')
+{    
+    for($u=0;$u<count($_POST["modem"]);$u++)
+    {
+        $modem_vector[$u]=$_POST["modem"][$u];
+    }
+    $cantidad_modem=count($modem_vector);
+}else
+{
+    $cantidad_modem=1;
+    $modem=$_POST["enviar_texto_modem"];
+}
+///////////////////////////////////////////
+$m_vector=to_pg_array($modem_vector);
+if ($opcion_grupo=='2')
+{
+	$tlf=$grupo;
+	$grupo='0';
+}else
+$tlf='';
+$rs=$obj_sms->enviar_sms($texto,$modem,$m_vector,$cantidad_modem,$grupo,$opcion_grupo,$tlf);
+//die(json_encode($rs));
+if($rs=="error")
+{
+	$mensaje[0]="error_bd";
+	die(json_encode($mensaje));
+}else
+{
+	/////////////////////////////////////////////////--AUDITORIA--///////////////////////////////////////
+    $auditoria_eva=new auditoria("Envio sms","Envio de sms (GRUPO-ID:".$grupo.",TLF:".$tlf.",MENSAJE:".$texto.")");
+    $auditoria=$auditoria_eva->registrar_auditoria();
+    if($auditoria==false)
+    {
+        $mensaje[0]='error_auditoria';die(json_encode($mensaje));
+
+    }
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
+    $mensaje[0]="registro_exitoso";
+	$mensaje[1]=$rs[0][0];
+	die(json_encode($mensaje));
+}
+?>

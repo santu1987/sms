@@ -1,0 +1,187 @@
+/*CSS DESARROLLADO POR GIANNI SANTUCCI*/
+/* Para el cuerpo del nav*/
+#cuerpo_nav
+{
+	position: absolute;
+}
+/*barra de colores de bajo del menu*/
+.barra_colores
+{
+	position: fixed;
+	top: 7%;
+	width:100%;
+}
+/*Para logo central de juventud bicentenaria*/
+.logo_juventud
+{
+	width: 40%;
+	left: 30%;
+	top: 13%;
+	position: absolute;
+	height: 70%;
+	/* margin: 0 auto; */
+}
+#cuerpo_programa
+{
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	top: 18%;
+	background-color: #fff;
+}
+/*formulario de inicio de session*/
+/*#contenedor_is
+{
+	position: absolute;
+	top: 10%;
+	left: 33%;
+	width: 30%;
+	height: auto;
+	padding: 2%;
+	background-color: #EFEFF5;
+}*/
+/* boton de inicio de sesion*/
+.btn_is
+{
+	width:100%;
+	height:20%;
+	margin-top: 1%;
+}
+/*engrane*/
+#engrane
+{
+	float: right;
+	margin: 10px 10px 10px 10px;
+	color: #fff;
+}
+/*Nombre de usuario en menu*/
+#nombre_us2
+{
+	float: left;
+	margin: 1% 1% 1% 1%;
+	/*color:#fff;*/
+	color: #333;
+}
+/*Boton de consulta*/
+#btn_cons_ind,#btn_ag_ind
+{
+	width:100%;
+}
+/*Input text de formularios*/
+.text_form_sms
+{
+	width:40%;
+}		
+/*Para los div de cada contacto en la carga de contacto*/
+.div_ind_dest
+{
+	margin-top: 4%;
+}
+/*Para boton de eliminacion de  usuarios desde carga de destinatarios*/
+.btn-qui
+{
+	width:100%;
+}
+/*Para formularios del resto del sistema*/
+.contenedor_forms
+{
+	position: absolute;
+	top: 10%;
+	left: 29%;
+	width: 37%;
+	height: auto;
+	padding: 2%;
+	background-color: #EFEFF5;
+	margin-bottom: 10%;
+}
+/*Para formularios entorno de envio */
+.contenedor_mensajes
+{
+	position: absolute;
+	top: 7%;
+	left: 35%;
+	width: 30%;
+	height: auto;
+	padding: 2%;
+	background-color: #fff;
+	margin-bottom: 10%;
+}
+/*Para el div que contiene los checks de grupos*/
+#contenedor_grupos
+{
+	margin-left: 2px;
+}
+/*Para los input text filtros de mensajes emergentes*/
+.input-filtros
+{
+	height: 10%;
+}
+/*Para input de grupo en form de enviar mensajes*/
+.sms_grupo_input
+{
+	margin-top: 1%;
+	margin-bottom: 5%;
+}
+/*Para select de grupo en form enviar mensajes*/
+.sms_grupo_select
+{
+	margin-top: 1%;
+}
+/*Para el frame que contiene la lista de los modem*/
+#contenedor_modem
+{
+	margin-left: 6%;
+	margin-top: 15%;
+}
+/*Para las caracteristicas de la tabla*/
+.tabla_body
+{
+	margin: 2% 2% 2%;
+}
+/*Para la columna de operaciones de la tabla de bandeja de salida*/
+.operaciones_be
+{
+	margin-left: 25%; 
+}
+#cuerpo_op{
+	width: 150px;
+	margin-left: 22%;
+}
+@media (min-width: 1024px){
+  #contenedor_is {
+    margin-left: 10%;
+    width: 40%;
+  }
+}
+
+@media (min-height: 500px){
+#contenedor_is
+ { 
+ 	margin-left: 26%;
+    width: 40%
+ } 
+}
+/****************************************/
+/*medidas gianni*/
+/*Para mas de 1400*/
+@media (max-width:1400px){
+	.contenedor_mensajes
+	{
+		width:40%;
+		left:25%;
+	}
+}
+/*para 700*/
+@media (max-width:800px){
+	.contenedor_mensajes
+	{
+		width:60%;
+		left:20%;
+	}
+	.contenedor_forms
+	{
+		width:50%;
+		letf:25%;
+	}
+}
+/**************************************/

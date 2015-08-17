@@ -1,0 +1,126 @@
+/*CSS DESARROLLADO POR GIANNI SANTUCCI*/
+#cuerpo_programa
+{
+	position: absolute;
+	width: 100%;
+	height: 90%;
+	top: 6%;
+	background-color: #fff;
+}
+/*formulario de inicio de session*/
+#contenedor_is
+{
+	position: absolute;
+	top: 20%;
+	left: 33%;
+	width: 30%;
+	height: auto;
+	padding: 2%;
+	background-color: #EFEFF5;
+}
+/* boton de inicio de sesion*/
+.btn_is
+{
+	width:100%;
+	height:20%;
+	margin-top: 1%;
+}
+/*engrane*/
+#engrane
+{
+	float: right;
+	margin: 10px 10px 10px 10px;
+	color: #fff;
+}
+/*Nombre de usuario en menu*/
+#nombre_us2
+{
+	float: left;
+	margin: 1% 1% 1% 1%;
+	color:#fff;
+}
+/*Boton de consulta*/
+#btn_cons_ind,#btn_ag_ind
+{
+	width:100%;
+}
+/*Input text de formularios*/
+.text_form_sms
+{
+	width:40%;
+}		
+/*Para los div de cada contacto en la carga de contacto*/
+.div_ind_dest
+{
+	margin-top: 4%;
+}
+/*Para boton de eliminacion de  usuarios desde carga de destinatarios*/
+.btn-qui
+{
+	width:100%;
+}
+/*Para formularios del resto del sistema*/
+.contenedor_forms
+{
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	width: 37%;
+	height: auto;
+	padding: 2%;
+	background-color: #EFEFF5;
+	margin-bottom: 10%;
+}
+/*Para formularios entorno de envio */
+.contenedor_mensajes
+{
+	position: absolute;
+	top: 10%;
+	left: 30%;
+	width: 30%;
+	height: auto;
+	padding: 2%;
+	background-color: #fff;
+	margin-bottom: 10%;
+}
+/*Para el div que contiene los checks de grupos*/
+#contenedor_grupos
+{
+	margin-left: 2px;
+}
+/*Para los input text filtros de mensajes emergentes*/
+.input-filtros
+{
+	height: 10%;
+}
+/*Para input de grupo en form de enviar mensajes*/
+.sms_grupo_input
+{
+	margin-top: 1%;
+	margin-bottom: 5%;
+}
+/*Para select de grupo en form enviar mensajes*/
+.sms_grupo_select
+{
+	margin-top: 1%;
+}
+/*Para el frame que contiene la lista de los modem*/
+#contenedor_modem
+{
+	margin-left: 6%;
+	margin-top: 15%;
+}
+/*Para las caracteristicas de la tabla*/
+.tabla_body
+{
+	margin: 5% 2% 2%;
+}
+/*Para la columna de operaciones de la tabla de bandeja de salida*/
+.operaciones_be
+{
+	margin-left: 25%; 
+}
+#cuerpo_op{
+	width: 150px;
+	margin-left: 22%;
+}

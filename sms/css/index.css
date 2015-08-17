@@ -1,0 +1,377 @@
+/*CSS DESARROLLADO POR GIANNI SANTUCCI*/
+/* Para el cuerpo del nav*/
+#cuerpo_nav
+{
+	position: absolute;
+}
+/*barra de colores de bajo del menu*/
+.barra_colores
+{
+	position: fixed;
+	top: 7%;
+	width:100%;
+}
+/*Para logo central de juventud bicentenaria*/
+.logo_juventud
+{
+	width: 40%;
+	left: 30%;
+	top: 13%;
+	position: absolute;
+	height: 70%;
+	/* margin: 0 auto; */
+}
+#cuerpo_programa
+{
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	top: 18%;
+	background-color: #fff;
+}
+/*formulario de inicio de session*/
+#contenedor_is
+{
+	position: absolute;
+	top: 10%;
+	left: 30%;
+	width: 40%;
+	height: auto;
+	padding: 2%;
+	background-color: #EFEFF5;
+}
+/* boton de inicio de sesion*/
+.btn_is
+{
+	width:100%;
+	height:20%;
+	margin-top: 1%;
+}
+/*engrane*/
+#engrane
+{
+	float: right;
+	margin: 10px 10px 10px 10px;
+	color: #fff;
+}
+/*Nombre de usuario en menu*/
+#nombre_us2
+{
+	float: left;
+	margin: 1% 1% 1% 1%;
+	color:#fff;
+	/*color: #333;*/
+}
+/*Boton de consulta*/
+#btn_cons_ind,#btn_ag_ind
+{
+	width:100%;
+}
+/*Input text de formularios*/
+.text_form_sms
+{
+	width:40%;
+}		
+/*Para los div de cada contacto en la carga de contacto*/
+.div_ind_dest
+{
+	margin-top: 4%;
+}
+/*Para boton de eliminacion de  usuarios desde carga de destinatarios*/
+.btn-qui
+{
+	width:100%;
+}
+/*Para formularios del resto del sistema*/
+.contenedor_forms
+{
+	position: absolute;
+	top: 10%;
+	left: 29%;
+	width: 37%;
+	height: auto;
+	padding: 2%;
+	background-color: #EFEFF5;
+	margin-bottom: 10%;
+}
+/*Para formularios entorno de envio */
+.contenedor_mensajes
+{
+	position: absolute;
+	top: 2%;
+	left: 28%;
+	width: 40%;
+	height: auto;
+	padding: 2%;
+	background-color: #fff;
+}
+/*Para el div que contiene los checks de grupos*/
+#contenedor_grupos
+{
+	margin-left: 2px;
+}
+/*Para los input text filtros de mensajes emergentes*/
+.input-filtros
+{
+	height: 10%;
+}
+/*Para input de grupo en form de enviar mensajes*/
+.sms_grupo_input
+{
+	margin-top: 1%;
+	margin-bottom: 5%;
+}
+/*Para select de grupo en form enviar mensajes*/
+.sms_grupo_select
+{
+	margin-top: 1%;
+}
+/*Para el frame que contiene la lista de los modem*/
+#contenedor_modem
+{
+	margin-left: 6%;
+	margin-top: 15%;
+}
+/*Para las caracteristicas de la tabla*/
+.tabla_body
+{
+	margin: 2% 2% 2%;
+}
+/*Para la columna de operaciones de la tabla de bandeja de salida*/
+.operaciones_be
+{
+	margin-left: 25%; 
+}
+#cuerpo_op{
+	width: 150px;
+	margin-left: 22%;
+}
+.contenedor_pdf
+{
+	width:100%;
+	height: 100%;
+}
+#form_reporte_filtro_sms
+{
+	width:100%;
+	height: 100%;
+}
+/*Para las imagenes del carrusel de la ayuda del sistema*/
+.orientacion_img
+{
+	width: 55%;
+	margin: 0 auto;
+}
+.titulo_ayuda
+{
+	text-align: center;
+	font-weight:bold;
+	font-size: 16pt;
+	padding: 1%;
+}
+.carr_mod
+{
+	width: 100%;
+	height: 90%;
+	overflow: false;
+}
+/*Para campo de nombre del modal carga individual*/
+#f_nom                                                                                                                                                                                                                                                                                                                                   999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999..................................................................................................................f_texto_sms
+{
+	width:80%;
+}
+/*Botones de consultas filtros*/
+.btn-consultas
+{
+	width:5%;
+}
+/*Para logo de juventud*/
+.img_juventud
+{
+	width:15%;
+}
+/*Para boton aceptar de mensajes*/
+#aceptar_mensaje
+{
+	float: right;
+}
+/****************************************************************************/
+/********************- Bloque @media ****************************************/
+/*para 800*/
+@media (max-width:800px){
+	/*Formulario de envio de sms*/
+	#contenedor_mensajes
+	{
+		width:60%;
+		left:20%;
+	}
+	.contenedor_forms
+	{
+		/*width:50%;
+		letf:25%;*/
+		width:60%;
+		left:20%;
+	}
+	#contenedor_is
+ 	{ 
+	 	/*margin-left: 26%;
+	    width: 40%*/
+	    width:70%;
+	    left:15%;
+ 	}
+}
+
+/* De x>=320-x<=480*/
+@media all and (min-device-width : 320px) and (max-device-width : 480px) {
+	/*Para desaparacer campos de los modal al disminuir la pantalla*/
+	.campo_esp
+	{
+		display: none;
+	}
+	/*td de las tablas de consulta*/
+	td
+	{
+		width:20%;
+		font-size: 10pt;
+	}
+	/*Formulario de envio de sms*/
+	.contenedor_mensajes
+	{
+		left: 15%;
+		width: 70%;
+	}
+	/*Logo de inicio de sesion*/
+	.logo_juventud 
+	{
+    	width: 50%;
+    	left: 25%;
+    	top: 13%;
+    	position: absolute;
+    	height: 50%;
+	}
+	/*td nombre de destinatario no registrado*/
+	.nom_no_reg
+	{
+		width:40%;
+	}
+	/* Input de nombre de grupo*/
+	#f_grupo_n
+	{
+		display: none;
+	}
+	/*Boton de consultas con filtros*/
+	.btn-consultas
+	{
+		width:100%;
+	}
+	.orientacion_img 
+	{
+		width: 100%;
+	}
+	.carousel-inner
+	{
+		width:100%;
+		max-height: 200px !important;
+	}
+	/************************************/
+}
+/* De x>=768-x<=1024*/
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+	/*td de las tablas de consulta*/
+	td
+	{
+		width:20%;
+		font-size: 12pt;
+	}
+	.logo_juventud 
+	{
+	    width: 50%;
+	    left: 25%;
+	    top: 13%;
+	    position: absolute;
+	    height: 70%;
+	}    
+}
+
+/******/
+/*Para 1410*/
+@media (min-width: 1410px){
+	#iframe_pdf
+	{
+		width:100%;
+		height: 600px;
+	}
+}
+/*Para 320*/
+@media (min-width: 320px){
+	#iframe_pdf
+	{
+		width:20%;
+		height: 200px;
+	}
+}
+/*Para que se adapte el modo mobile en 980px*/
+@media (max-width: 980px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+    .navbar-collapse.in {
+        overflow-y: auto !important;
+    }
+	.navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+    }
+    .navbar-nav .open .dropdown-menu>li>a, .navbar-nav .open .dropdown-menu .dropdown-header {
+        padding: 5px 15px 5px 25px;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        color: #999;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover, 
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus {
+        color: #fff;
+        background-color: transparent;
+        background-image:none;
+    }
+}
+/***************************************************************************/
+	
