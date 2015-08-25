@@ -5,7 +5,9 @@ class Conex
 		
 			private $conexion;
 			private $servidor="localhost";
+			//private $clave="SMs*26-Qc/smS";
 			//private $clave="machurucuto666";
+			//private $clave="bolivar";
 			private $clave="123456";
 			private $usuario="postgres";
 			private $bd="db_sms_2015";
@@ -15,6 +17,10 @@ class Conex
 		/*Metodo constructor*/
 		public function __construct()
 		{
+			/*$this->servidor="localhost";
+			$this->clave="machurucuto666";
+			$this->usuario="postgres";
+			$this->bd="espacio_virtual_ap";*/
 			$this->query="";
 		}
 		//
