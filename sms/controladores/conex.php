@@ -5,7 +5,6 @@ class Conex
 		
 			private $conexion;
 			private $servidor="localhost";
-			//private $clave="machurucuto666";
 			private $clave="123456";
 			private $usuario="postgres";
 			private $bd="db_sms_2015";
